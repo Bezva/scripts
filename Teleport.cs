@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Teleport : MonoBehaviour
 {
-    public Transform teleportPosition;
-
+    public Transform teleportPoint;
     private void OnTriggerEnter(Collider other)
+    void Start()
     {
-        other.transform.position = teleportPosition.position;
+        other.transform.position = teleportPoint.position;
     }
+
 }

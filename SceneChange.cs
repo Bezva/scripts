@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-public class SceneChange : MonoBehaviour
-{
-    public string SceneName;
 
-    private void OnTriggerEnter(Collider other)
+public class EditorSceneChange : MonoBehaviour
+{
+    public string sceneName;
+
+    void ontrOnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene(SceneName);
+        EditorSceneManager.LoadScene(sceneName);
     }
 }
